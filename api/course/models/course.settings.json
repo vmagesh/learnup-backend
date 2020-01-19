@@ -34,20 +34,16 @@
     "price": {
       "type": "integer"
     },
-    "createdon": {
-      "type": "date",
-      "required": true,
-      "default": "2020-01-19T06:30:00.000Z"
-    },
-    "updatedon": {
-      "type": "date"
-    },
     "rating": {
       "type": "float"
     },
     "purchasedcount": {
       "type": "integer",
       "default": 0
+    },
+    "topics": {
+      "via": "course",
+      "collection": "topic"
     }
   }
 }

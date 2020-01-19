@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "labs",
+  "info": {
+    "name": "lab"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ipaddress": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}
