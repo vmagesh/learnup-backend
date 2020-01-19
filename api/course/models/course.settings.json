@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "courses",
+  "info": {
+    "name": "course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "createdon": {
+      "type": "date",
+      "required": true,
+      "default": "2020-01-19T06:30:00.000Z"
+    },
+    "updatedon": {
+      "type": "date"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "purchasedcount": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

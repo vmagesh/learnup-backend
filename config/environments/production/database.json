@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "mysql",
+        "host": "${process.env.DATABASE_HOST || '66.220.26.88'}",
+        "port": "${process.env.DATABASE_PORT || 3306}",
+        "database": "${process.env.DATABASE_NAME || 'learnup'}",
+        "username": "${process.env.DATABASE_USERNAME || 'ertino'}",
+        "password": "${process.env.DATABASE_PASSWORD || 'ertino'}"
+      },
+      "options": {}
+    }
+  }
+}
